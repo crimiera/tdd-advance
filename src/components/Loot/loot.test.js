@@ -1,10 +1,7 @@
 import React from 'react';
-import {shallow,mount,configure } from 'enzyme';
+import {shallow ,mount } from 'enzyme';
 import {Loot} from './index';
 
-var Adapter = require('enzyme-adapter-react-16');
-
-configure({ adapter: new Adapter() });
 
 describe('Loot Component ',()=>{
 
