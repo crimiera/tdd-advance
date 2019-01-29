@@ -18,7 +18,6 @@ describe('Wallet',()=>{
     }
 
     const wallet = shallow(<Wallet {...props}/>);
-    wallet.debug();
     it("Wallet render",()=>{
         expect(wallet).toMatchSnapshot(); 
     });
@@ -27,7 +26,7 @@ describe('Wallet',()=>{
         expect(wallet.find('.balance').text()).toEqual('Wallet 20');
     })
 
-    it("check if the input add / withdraw  exisit on the page ",()=>{
+    it("check if the input add / withdraw  exist on the page ",()=>{
         expect(wallet.find(".input-wallet").exists()).toBe(true);
     })
 

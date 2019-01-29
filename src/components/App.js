@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Wallet from './Wallet';
+import Loot from './Loot';
 class App extends Component {
   render() {
     return (
@@ -10,7 +11,10 @@ class App extends Component {
         </header>
         <main>
           <Wallet/>
+          <hr/>
+          <Loot/>
         </main>
+        <div >Powered by <a href='https://www.coindesk.com/price'>CoinDesk</a></div>
       </div>
     );
   }

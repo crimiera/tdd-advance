@@ -17,5 +17,14 @@ describe('App',()=>{
   it('contains a Wallet container',()=>{
     expect(app.find('Connect(Wallet)').exists()).toBe(true);
   })
+
+  it('contains a Loot container',()=>{
+    expect(app.find('Connect(Loot)').exists()).toBe(true);
+  })
+
+  it('contain a link to the coindesk price page',()=>{
+    expect(app.find('a').props().href).toBe('https://www.coindesk.com/price');
+  })
+  
 });
 
