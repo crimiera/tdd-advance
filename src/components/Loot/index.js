@@ -5,7 +5,7 @@ import {fetchBitcoin} from '../../actions/bitcoin';
 export class Loot extends Component {
         
     componentDidMount(){
-        this.props.fetchBitcoin();
+       this.props.fetchBitcoin();
     }
 
     computeBitcoin = () => {
